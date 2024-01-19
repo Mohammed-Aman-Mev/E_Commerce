@@ -2,7 +2,7 @@
 
 const App = () => {
   return (
-    <div className='bg-green-500'>
+    <div className='bg-violet-500'>
       kjhguy
     </div>
   )
