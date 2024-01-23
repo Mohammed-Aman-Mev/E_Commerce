@@ -2,6 +2,7 @@
 
 import { lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
+const Footer = lazy(() => import("./Components/Footer"));
 
 const Home = lazy(() => import("./Pages/Home"));
 const Search = lazy(() => import("./Pages/Search"));
@@ -23,6 +24,7 @@ const App = () => {
         <Route path="/payment" element={<Payment />} />
         <Route path="/cart" element={<Cart />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 };
