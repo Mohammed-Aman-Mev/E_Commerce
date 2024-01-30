@@ -1,5 +1,3 @@
-// import React from 'react';
-
 import { lazy } from "react";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 const Footer = lazy(() => import("./Components/Footer"));
@@ -11,6 +9,7 @@ const Shipping = lazy(() => import("./Pages/Shipping"));
 const Order = lazy(() => import("./Pages/Order"));
 const Payment = lazy(() => import("./Pages/Payment"));
 const Cart = lazy(() => import("./Pages/Cart"));
+const Register = lazy(() => import("./Pages/Register"));
 
 const App = () => {
   return (
@@ -23,6 +22,7 @@ const App = () => {
         <Route path="/order" element={<Order />} />
         <Route path="/payment" element={<Payment />} />
         <Route path="/cart" element={<Cart />} />
+        <Route path="/register" element={<Register />} />
       </Routes>
       <Footer />
     </BrowserRouter>
